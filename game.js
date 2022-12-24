@@ -39,6 +39,8 @@ $(".btn").click((e) => {
   if (level) {
     const color = e.target.id
 
+    playSound(color)
+
     $("#" + color).addClass("pressed")
     setTimeout(() => {
       $("#" + color).removeClass("pressed")
